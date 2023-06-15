@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  #header img {
+    width: 100px; /* 根據需要設置合適的寬度值 */
+    margin: auto;
+  }
+  
+  #menu {
+    position: relative;
+  }
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #f1f1f1;
+    color: #666;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 10px; /* 将此数值调整为适当的值 */
+  }
+  
+  .dropdown-content a {
+    color: #666;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #search-container {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  #search-input {
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+  }
+  
+  #footer {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #footer a {
+    margin: 0 10px;
+    color: #666;
+    text-decoration: none;
+  }
+  

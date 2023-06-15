@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <audio id="myaudio">
+    <source src="audio.mp3" type="audio/mp3">
+    你的瀏覽器不支援 HTML5 音樂播放。
+  </audio>
+
+  <div id="header">
+    <img src="google_logo.png" alt="Google Logo">
+    <div id="menu">
+      <div class="dropdown">
+        <button class="dropbtn">選單</button>
+        <div class="dropdown-content">
+          <a href="#" id="contact-link">聯絡我們</a>
+          <a href="about.html">關於我們</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="請輸入一個台灣地區">
+    <button id="search-button">檢視</button>
+  </div>
+  <form method="post" action="insert.php">
+    <label for="Name">餐廳名稱:</label>
+    <input type="text" name="Name" id="Name"><br><br>
+  
+    <label for="Region">縣市:</label>
+    <input type="text" name="Region" id="Region"><br><br>
+
+    <input type="submit" value="插入">
+  </form>
+  <form method="post" action="delete.php">
+    <label for="餐聽">刪除餐廳</label>
+    <input type="text" name="餐廳" id="餐廳"><br><br>
+  
+    <input type="submit" value="刪除">
+  </form>
+  <h2>更新氣候資料 (若想維持原本的資料請輸入小寫的a)</h2>
+  <form method="post" action="updateweather.php">
+      <label for="城市">城市：</label>
+      <input type="text" name="城市" id="城市" required><br><br>
+      <label for="平均氣溫">平均氣溫:</label>
+      <input type="text" name="平均氣溫" id="平均氣溫" required><br><br>
+      <label for="降雨量">降雨量：</label>
+      <input type="text" name="降雨量" id="降雨量" required><br><br>
+      <label for="降雨天數">降雨天數:</label>
+      <input type="text" name="降雨天數" id="降雨天數" required><br><br>
+      <input type="submit" value="更新">
+  </form>
+
+  <h2>更新公車資料 (若想維持原本的資料請輸入小寫的a)</h2>
+  <form method="post" action="updatebus.php">
+      <label for="城市">城市：</label>
+      <input type="text" name="城市" id="城市" required><br><br>
+      <label for="公車站牌數">公車站牌數:</label>
+      <input type="text" name="公車站牌數" id="公車站牌數" required><br><br>
+      <label for="縣市面積">縣市面積:</label>
+      <input type="text" name="縣市面積" id="縣市面積" required><br><br>
+      <label for="公車密度">公車密度:</label>
+      <input type="text" name="公車密度" id="公車密度" required><br><br>
+      <input type="submit" value="更新">
+  </form>
+
+  <h2>更新捷運資料 (若想維持原本的資料請輸入小寫的a)</h2>
+  <form method="post" action="updateMRT.php">
+      <label for="城市">城市：</label>
+      <input type="text" name="城市" id="城市" required><br><br>
+      <label for="路線數量">捷運路線數量:</label>
+      <input type="text" name="路線數量" id="路線數量" required><br><br>
+      <label for="平均日運輸量">捷運平均日運輸量:</label>
+      <input type="text" name="平均日運輸量" id="平均日運輸量" required><br><br>
+      <label for="捷運站數量">捷運站數量:</label>
+      <input type="text" name="捷運站數量" id="捷運站數量" required><br><br>
+      <label for="路網長度">捷運路網長度:</label>
+      <input type="text" name="路網長度" id="路網長度" required><br><br>
+      <input type="submit" value="更新">
+  </form>
+
+
+  <h2>更新暴力犯罪資料 (若想維持原本的資料請輸入小寫的a)</h2>
+  <form method="post" action="updatemurder.php">
+      <label for="城市">城市：</label>
+      <input type="text" name="城市" id="城市" required><br><br>
+      <label for="暴力案件">暴力案件:</label>
+      <input type="text" name="暴力案件" id="暴力案件" required><br><br>
+      <label for="平均幾人一個暴力案件">平均幾人一個暴力案件:</label>
+      <input type="text" name="平均幾人一個暴力案件" id="平均幾人一個暴力案件" required><br><br>
+      <input type="submit" value="更新">
+  </form>
+
+  <div id="search-results"></div>
+    <label for=""></label>
+  <div id="footer">
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
